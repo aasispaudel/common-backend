@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Reminder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #FF9800;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #888888;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Event Reminder</h1>
+        </div>
+        <div class="content">
+            <p>Hello participant,</p>
+            <p>This is a reminder that your event <strong>{{ event_name }}</strong> is happening in a few seconds.</p>
+            <p>Event Details:</p>
+            <ul>
+                <li><strong>Date:</strong> {{ event_date }} UTC</li>
+                <li><strong>Time:</strong> {{ event_time }} UTC</li>
+                <li><strong>Participants:</strong> {{ participants }}</li>
+            </ul>
+            <p>We hope you have a great time!</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Levo Events Management. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
