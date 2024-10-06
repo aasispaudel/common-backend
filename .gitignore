@@ -162,4 +162,4 @@ cython_debug/
 .idea/
 
 # Local stuff
-/jobs.sqlite/*
+*.sqlite
