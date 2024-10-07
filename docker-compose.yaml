@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: gunicorn -w 2 -k uvicorn.workers.UvicornWorker app:main
+    command: uvicorn app.main:app --host 0.0.0.0 --workers 2
     env_file:
         - .env
     ports:
