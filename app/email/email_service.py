@@ -28,12 +28,12 @@ class SendEmailType(Enum):
 
 
 conf = ConnectionConfig(
-    MAIL_USERNAME=os.getenv('EMAIL_USERNAME'),
-    MAIL_PASSWORD=os.getenv('EMAIL_PASSWORD'),
-    MAIL_FROM=os.getenv('EMAIL_FROM'),
+    MAIL_USERNAME='contact@arration.com',
+    MAIL_PASSWORD='(0m3flyw!#hm3',
+    MAIL_FROM='contact@arration.com',
     MAIL_PORT=587,
-    MAIL_SERVER=os.getenv('EMAIL_SERVER'),
-    MAIL_FROM_NAME=os.getenv('EMAIL_FROM_NAME'),
+    MAIL_SERVER='mail.arration.com',
+    MAIL_FROM_NAME='Asis Events Management',
     MAIL_SSL_TLS=False,
     MAIL_STARTTLS=True,
     USE_CREDENTIALS=True,
