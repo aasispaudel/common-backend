@@ -1,2 +1,4 @@
 # common-backend
-Common Backend
+Common Backend for my apps.
+
+One backend because ease of hosting.
